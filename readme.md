@@ -115,3 +115,8 @@ npm i crypto-js crypto-browserify stream-browserify buffer -D
 - webpack4 本身的tree shaking比较简单，主要是找一个 import 进来的变量是否在这个模块内出现过
 - webpack5可以进行根据作用域之间的关系来进行优化
 - webpack-deep-scope-demo
+
+
+### 8.3 sideEffects
+- 函数副作用指当调用函数时，除了返回函数值之外，还产生了附加的影响，例如修改全局变量
+- 严格的函数式语言要求函数必须无副作用

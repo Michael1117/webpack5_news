@@ -7,6 +7,7 @@
     "start": "webpack serve",
     "build": "webpack"
   },
+  "sideEffects": false,
   "keywords": [],
   "author": "",
   "license": "ISC",

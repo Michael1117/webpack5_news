@@ -27,8 +27,11 @@ import('./C')
      return isNull(args)
  } */
 
-import { function1 } from "./module1";
+/* import { function1 } from "./module1";
 
 import { function2 } from "./module2";
 
 console.log(function1);
+ */
+
+ import './title'
