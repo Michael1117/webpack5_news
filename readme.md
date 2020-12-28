@@ -103,6 +103,10 @@ deterministic|根据模块名称生成简短的hash值|915
 size|根据模块大小生成的数字id|0
 
 ## 7. 移除Node.js的polyfill
+- webpack4带来了许多node.js核心模块的polyfill，一旦模块中使用了任何核心模块(如crypto), 这些模块就会别自动启用
+- webpack5 不再自动引入这些polyfill
 
-
+```
+npm i crypto-js crypto-browserify stream-browserify buffer -D
+```
 ## 8. 更强大的tree-shaking

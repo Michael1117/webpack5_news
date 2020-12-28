@@ -12,6 +12,18 @@ module.exports = {
         moduleIds: 'deterministic',      // 模块名称的生成规则
         chunkIds: 'deterministic'        // 代码块名称的生成规则
     },
+    resolve: {
+        /* fallback: {
+            'crypto': require.resolve('crypto-browserify'),
+            'stream': require.resolve('stream-browserify'),
+            'buffer': require.resolve('buffer')
+        }, */
+        fallback: {
+            'crypto': false,
+            'stream': false,
+            'buffer': false
+        }
+    },
     cache: {
         type: 'memory',  //memory  filesystem
         //cacheDirectory: path.resolve(__dirname, "node_modules/.cache/webpack")

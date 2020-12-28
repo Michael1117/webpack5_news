@@ -12,6 +12,11 @@ console.log('txt', txt) */
 /* import data from 'data:text/javascript, export default "title"'
 console.log(data) */
 
-import('./A')
+/* import('./A')
 import('./B')
 import('./C')
+ */
+
+ import cryptoJs from 'crypto-js'
+
+ console.log(cryptoJs.MD5("Hello").toString())      // hash值
