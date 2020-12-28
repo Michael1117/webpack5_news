@@ -5,11 +5,12 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        filename: '[name].js'
+        filename: '[name].js',   // 入口代码块文件名的生成规则
+        chunkFilename: '[name].js' //  非入口代码块文件名的生成规则
     },
     optimization: {
-        moduleIds: 'natural',      // 模块名称的生成规则
-        chunkIds: 'natural'        // 代码块名称的生成规则
+        moduleIds: 'deterministic',      // 模块名称的生成规则
+        chunkIds: 'deterministic'        // 代码块名称的生成规则
     },
     cache: {
         type: 'memory',  //memory  filesystem
