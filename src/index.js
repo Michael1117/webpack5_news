@@ -9,5 +9,9 @@ console.log('jpg', jpg)
 console.log('ico', ico)
 console.log('txt', txt) */
 
-import data from 'data:text/javascript, export default "title"'
-console.log(data)
+/* import data from 'data:text/javascript, export default "title"'
+console.log(data) */
+
+import('./A')
+import('./B')
+import('./C')
