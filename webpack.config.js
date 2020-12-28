@@ -4,6 +4,13 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
+    output: {
+        filename: '[name].js'
+    },
+    optimization: {
+        moduleIds: 'natural',      // 模块名称的生成规则
+        chunkIds: 'natural'        // 代码块名称的生成规则
+    },
     cache: {
         type: 'memory',  //memory  filesystem
         //cacheDirectory: path.resolve(__dirname, "node_modules/.cache/webpack")
