@@ -68,3 +68,30 @@ https://github.com/cnpm/cnpm/issue/335
 next.js  react ssr
 nuxt.js  vue  ssr
 nest.js  node框架
+
+
+## 4. 资源模块
+
+- 资源模块是一种模块类型，它允许使用资源文件() 而无需配置额外loader
+- raw-loader => asset/source  导出资源的源代码
+- file-loader => asset/resource 发送一个单独文件并导出URL
+- url-loader => asset/inline    导出一个资源的data  URL
+- asset 在导出一个data  URL和发送一个单独的文件之间自动选择，之前通过使用url-loader, 并且配置资源体积限制实现
+- Rule.type
+- asset-modules
+
+
+## 5. URIs
+- experiments
+- Webpack 5支持在请求中处理协议
+- 支持data  支持Base 64或原始编码。MimeType可以在module.rule中被映射到加载器和模块类型
+
+
+
+## 6. modules & chunkId的优化
+
+
+## 7. 移除Node.js的polyfill
+
+
+## 8. 更强大的tree-shaking
