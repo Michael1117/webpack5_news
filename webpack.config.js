@@ -26,6 +26,27 @@ module.exports = {
                     },
                     
                 }]
+            },
+            {
+                test: /\.png$/,
+                type: 'asset/resource'  // 对标file-loader
+            },
+            {
+                test: /\.ico$/,
+                type: 'asset/inline'   // 对标url-loader 模块的大小<limit base64 字符串
+            },
+            {
+                test: /\.txt$/,
+                type: 'asset/source'        // 对标raw-loader
+            },
+            {
+                test: /\.jpg$/,
+                type: 'asset',          // 对标raw-loader
+                parser: {
+                    dataUrlCondition: {
+                        maxSize: 4*1024
+                    }
+                }
             }
         ]
     },

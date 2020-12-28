@@ -1,5 +1,10 @@
-import React from "react";
+import png from './assets/logo.png'
+import jpg from './assets/logo.jpg'
+import ico from './assets/logo.ico'
+import txt from './assets/logo.txt'
 
-import ReactDOM from "react-dom";
 
-ReactDOM.render(<div>Hello World</div>, document.getElementById("root"));
+console.log('png', png)
+console.log('jpg', jpg)
+console.log('ico', ico)
+console.log('txt', txt)
