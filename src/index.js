@@ -17,6 +17,18 @@ import('./B')
 import('./C')
  */
 
- import cryptoJs from 'crypto-js'
+/*  import cryptoJs from 'crypto-js'
 
- console.log(cryptoJs.MD5("Hello").toString())      // hash值
+ console.log(cryptoJs.MD5("Hello").toString())      // hash值 */
+
+/*  import {isNumber, isNull} from 'lodash-es'
+
+ export function isNull() {
+     return isNull(args)
+ } */
+
+import { function1 } from "./module1";
+
+import { function2 } from "./module2";
+
+console.log(function1);

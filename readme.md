@@ -110,3 +110,8 @@ size|根据模块大小生成的数字id|0
 npm i crypto-js crypto-browserify stream-browserify buffer -D
 ```
 ## 8. 更强大的tree-shaking
+
+- tree-shaking就在打包的时候剔除没有用到的代码
+- webpack4 本身的tree shaking比较简单，主要是找一个 import 进来的变量是否在这个模块内出现过
+- webpack5可以进行根据作用域之间的关系来进行优化
+- webpack-deep-scope-demo

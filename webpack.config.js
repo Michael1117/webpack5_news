@@ -2,13 +2,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         filename: '[name].js',   // 入口代码块文件名的生成规则
         chunkFilename: '[name].js' //  非入口代码块文件名的生成规则
     },
     optimization: {
+        usedExports: true,      // 标注使用到的导出
         moduleIds: 'deterministic',      // 模块名称的生成规则
         chunkIds: 'deterministic'        // 代码块名称的生成规则
     },
